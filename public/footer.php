@@ -13,9 +13,10 @@
                             <input 
                             id="user-name" 
                             type="text" 
+                            name="username" 
                             class="input"
                             placeholder=" "
-                            name="username" 
+                            
                             maxlenght="100"
                             required 
                             />
@@ -25,10 +26,10 @@
                         <div class="input-group">
                             <input 
                             id="user-phone" 
-                            type="tel" 
-                            class="input"      
+                            type="tel"
+                            name="userphone"
+                            class="input phone-mask"      
                             placeholder=" "
-                            name="userphone" 
                             maxlenght="30"
                             required 
                             />
@@ -178,11 +179,13 @@
             <form action="handler.php" method="POST" class="modal-form">
                 <div class="input-group-wrapper input-group-vertical">
                     <div class="input-group modal-input-group">
-                        <input id="modal-user-name" 
+                        <input 
+                        id="modal-user-name" 
                         type="text" 
-                        class="input modal-input"  
-                        placeholder=" " 
                         name="username" 
+                        class="input"  
+                        placeholder=" " 
+                        
                         />
                         <label class="input-group-label modal-input-label" for="modal-user-name">Имя</label>
                     </div>
@@ -191,9 +194,10 @@
                         <input 
                         id="modal-user-phone" 
                         type="tel" 
-                        class="input modal-input"
-                        placeholder=" " 
                         name="userphone" 
+                        class="input phone-mask"
+                        placeholder=" " 
+                        
                         />
                         <label class="input-group-label modal-input-label" for="modal-user-phone">Номер телефона</label>
                     </div>
