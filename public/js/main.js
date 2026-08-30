@@ -128,6 +128,41 @@ document.addEventListener('keyup', (event) => {
         modal.classList.toggle("is-open");
     }
 });
+
+const forms = document.querySelectorAll('form'); //собираем все формы
+
+forms.forEach((form) => {
+    const validation = new JustValidate(form, {
+        errorFieldCssClass: "is-invalid",
+    });
+    validation
+        .addField("[name=username]", [
+            {
+                rule: "required",
+                errorMessage: 'Укажите имя',
+            },
+
+            {
+                rule: "maxLength",
+                value: 30,
+                errorMessage: 'Максимально 30 символов',
+            },
+        ])
+        .addField("[name=userphone]", [
+            {
+                rule: "required",
+                errorMessage: 'Уакжите телефон',
+            },
+            {
+                rule: "maxLength",
+                value: 30,
+                errorMessage: 'Максимально 30 символов',
+            },
+        ]);
+});
+
+
+
 //const modal = document.querySelector(".modal");
 // const modalToggle = document.querySelectorAll("[data-toggle=modal]");
 // const modalClose = document.querySelector(".modal-close");
