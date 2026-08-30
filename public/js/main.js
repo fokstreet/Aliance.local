@@ -158,7 +158,10 @@ forms.forEach((form) => {
                 value: 30,
                 errorMessage: 'Максимально 30 символов',
             },
-        ]);
+        ])
+        .onSuccess((event) => {
+            console.log("Validation passes and form submitted", event);
+        });
 });
 
 
