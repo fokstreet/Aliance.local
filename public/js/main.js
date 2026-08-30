@@ -160,7 +160,7 @@ forms.forEach((form) => {
             },
         ])
         .onSuccess((event) => {
-            console.log("Validation passes and form submitted", event);
+            console.log(event.target.getAttribute("method"));
         });
 });
 
