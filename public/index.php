@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css\style.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -110,7 +110,7 @@
                 +7 (499) 686-10-14
             </a>
         </div>
-        <button class="navbar-button button" data-toggle="modal">
+        <button class="navbar-button button" data-toggle="modal" data-target="#feedback-modal">
             <svg class="button-icon" width="24px" height="24px">
                 <use href="img/sprite.svg#phone"></use>
             </svg>
@@ -131,7 +131,8 @@
                     простого факта: высококачественный прототип будущего проекта напрямую зависит от анализа
                     существующих паттернов поведения.
                 </p>
-                <div class="button header-button" data-toggle="modal">Подробнее о компании</div>
+                <div class="button header-button" data-toggle="modal" data-toggle="modal" 
+                data-target ="#feedback-modal">Подробнее о компании</div>
                 <!-- /.header-title  
                   -->
             </div>

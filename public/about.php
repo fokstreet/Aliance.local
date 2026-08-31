@@ -85,7 +85,7 @@
                 +7 (499) 686-10-14
             </a>
         </div>
-        <button class="navbar-button button" data-toggle="modal">
+        <button class="navbar-button button" data-toggle="modal" data-target="#feedback-modal">
             <svg class="button-icon" width="24px" height="24px">
                 <use href="img/sprite.svg#phone"></use>
             </svg>
